@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kai Halpin | Mechanical Engineering @ UC Irvine</title>
-<meta name="description" content="Portfolio of Kai Halpin, mechanical engineering student at UC Irvine focused on robotics, mechatronics, and design.">
+<meta name="description" content="Portfolio of Kai Halpin, mechanical engineering student at UC Irvine interested in the energy, steel, and aerospace sectors.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -66,6 +66,10 @@ header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 8
 .card:hover{transform:translateY(-6px);box-shadow:0 14px 32px rgba(0,0,0,.09)}
 .card figure{aspect-ratio:4/3;background:var(--placeholder);overflow:hidden}
 .card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.card figure.fit{background:#fff}
+.card figure.fit img{object-fit:contain;padding:8px;box-sizing:border-box}
+.card .links{font-size:.9em}
+.card .links a{color:var(--accent);text-decoration:underline}
 .card:hover img{transform:scale(1.04)}
 .card .body{padding:20px 22px 24px}
 .card h3{font-size:1.05rem;font-weight:600;letter-spacing:-.01em;margin-bottom:4px}
@@ -131,7 +135,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem;border-top:1px so
   <section class="hero">
     <div class="wrap">
       <p class="tagline">Mechanical Engineering @ UC Irvine</p>
-      <h1>Mechanical engineering student focused on robotics, mechatronics, and design</h1>
+      <h1>Mechanical engineering student interested in the energy, steel, and aerospace sectors</h1>
       <p class="sub">I design, build, and test machines, from hand-machined tools to autonomous robots, and I enjoy working across mechanical and electrical systems.</p>
       <div class="cta">
         <a class="btn primary" href="#projects">View Projects</a>
@@ -145,8 +149,8 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem;border-top:1px so
   <section id="about">
     <div class="wrap">
       <h2>About</h2>
-      <p>I'm a mechanical engineering student at UC Irvine with a background in mechanical design, mechatronics, and rapid prototyping. I use SolidWorks, 3D printing, and laser cutting to move quickly from concept to working hardware, and I machine parts on manual lathes and mills. I also lead the electrical and mechanical team on UCI's SEDS Mars rover.</p>
-      <p>Outside the lab I've worked in industrial and energy systems, from water treatment facility walkdowns to energy audits for manufacturers and automating well data analysis for an oil and gas operator.</p>
+      <p>I'm a mechanical engineering student at UC Irvine with a background in mechanical design, mechatronics, and rapid prototyping. I use SolidWorks, 3D printing, and laser cutting to move quickly from concept to working hardware, and I machine parts on manual lathes and mills.</p>
+      <p>I have experience in steel, energy efficiency, and oil and gas. At Pacific Steel Group I reviewed P&amp;IDs, ran field walkdowns, and calculated structural loads for pipe racks at the Mojave Micro Mill. At UCI's Smart ITAC center I perform energy assessments for local manufacturers. At Sentinel Peak Resources I automated injection profile analysis for 250+ wells.</p>
       <p>B.S. Mechanical Engineering at UC Irvine (expected June 2028), 3.75 GPA, and recipient of over $100,000 in nationally competitive STEM scholarships.</p>
       <ul class="skills">
         <li>SolidWorks &amp; FEA</li>
@@ -172,7 +176,17 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem;border-top:1px so
       <div class="grid">
 
         <article class="card">
-          <figure><img src="images/hammer.png" alt="SolidWorks render and finished machined hammer" loading="lazy" onerror="this.style.visibility='hidden'"></figure>
+          <figure class="fit"><img src="images/rocket-nose-cone.png" alt="SolidWorks model of the rocket nose cone" loading="lazy" onerror="this.style.visibility='hidden'"></figure>
+          <div class="body">
+            <h3>Model Rocket (In Progress)</h3>
+            <p class="org">Personal project</p>
+            <p>Designed a high-power model rocket in OpenRocket, then modeled the nose cone and fins in SolidWorks for manufacturing. The design is 57.2 cm long with a 1.76 caliber stability margin and a simulated apogee of 1,176 m on an H135W motor. Manufacturing is up next.</p>
+            <p class="links"><a href="images/rocket-openrocket.png" target="_blank" rel="noopener">OpenRocket design</a> · <a href="images/rocket-nose-cone.png" target="_blank" rel="noopener">Nose cone CAD</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure class="fit"><img src="images/hammer.png" alt="SolidWorks render and finished machined hammer" loading="lazy" onerror="this.style.visibility='hidden'"></figure>
           <div class="body">
             <h3>Mechanical Hammer Design</h3>
             <p class="org">Machining coursework</p>
@@ -384,12 +398,11 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem;border-top:1px so
   <section id="contact">
     <div class="wrap">
       <h2>Contact</h2>
-      <p>I'm always happy to talk about robotics, design, or internship opportunities.</p>
+      <p>I'm always happy to talk about energy, steel, aerospace, or internship opportunities.</p>
       <ul class="contact-list">
         <li><span>Email</span><a href="mailto:kaihalpin2006@gmail.com">kaihalpin2006@gmail.com</a></li>
         <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/kaihalpin" target="_blank" rel="noopener">linkedin.com/in/kaihalpin</a></li>
         <li><span>Resume</span><a href="resume.pdf" target="_blank" rel="noopener">Download PDF</a></li>
-        <li><span>Phone</span><a href="tel:+14242019073">424-201-9073</a></li>
       </ul>
     </div>
   </section>
